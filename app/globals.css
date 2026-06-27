@@ -861,6 +861,7 @@ a {
   .button-cta {
     min-width: 108px;
     height: 62px;
+    margin-left: 40px;
   }
 
   .hero {
