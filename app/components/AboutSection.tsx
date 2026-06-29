@@ -9,17 +9,17 @@ export function AboutSection({ whatsappLink }: AboutSectionProps) {
     <section id="about" className="section container about-grid" data-animate>
       <div className="about-preview">
         <img
-          src="https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=900&q=80"
-          alt="BMW car front"
+          src="/images/4 BMW 7 Series.jpg"
+          alt="BMW 7 Series"
         />
         <img
-          src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=560&q=80"
-          alt="Black SUV"
+          src="/images/6 Toyota Land Cruiser LC300.jpg"
+          alt="Toyota Land Cruiser LC300"
           className="about-small"
         />
         <img
-          src="https://images.unsplash.com/photo-1523983388277-336a66bf9bcd?auto=format&fit=crop&w=560&q=80"
-          alt="Mercedes SUV"
+          src="/images/2 Mercedes-Benz G-Wagon.jpeg"
+          alt="Mercedes-Benz G-Wagon"
           className="about-small"
         />
       </div>

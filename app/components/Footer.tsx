@@ -34,10 +34,10 @@ export function Footer() {
           <div className="footer-column footer-gallery">
             <h4>Gallery</h4>
             <div className="footer-gallery-grid">
-              <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=200&q=80" alt="Gallery car" />
-              <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=200&q=80" alt="Gallery car" />
-              <img src="https://images.unsplash.com/photo-1549921296-3a4a3e28b615?auto=format&fit=crop&w=200&q=80" alt="Gallery car" />
-              <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=200&q=80" alt="Gallery car" />
+              <img src="/images/1 Rolls Royce.jpeg" alt="Rolls Royce" />
+              <img src="/images/2 Mercedes-Benz G-Wagon.jpeg" alt="Mercedes-Benz G-Wagon" />
+              <img src="/images/3 Mercedes-Benz.jpeg" alt="Mercedes-Benz" />
+              <img src="/images/4 BMW 7 Series.jpg" alt="BMW 7 Series" />
             </div>
           </div>
           <div className="footer-column footer-newsletter">

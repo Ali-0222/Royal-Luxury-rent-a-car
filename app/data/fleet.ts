@@ -6,21 +6,20 @@ export interface FleetCar {
 }
 
 export const fleet: FleetCar[] = [
-  { name: 'Prado TX', image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80' },
-  { name: 'BMW i8', image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Audi A6', image: 'https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=800&q=80' },
-  { name: 'AMG G 63 Wagon', image: 'https://images.unsplash.com/photo-1519838261528-ace09b24f155?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Fortuner Legender', image: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Honda Civic RS', image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Hyundai Sonata', image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Land Cruiser ZX', image: 'https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Lexus LX 570', image: 'https://images.unsplash.com/photo-1518531933039-76d4e09b196a?auto=format&fit=crop&w=800&q=80' },
+  { name: 'Rolls Royce', image: '/images/1 Rolls Royce.jpeg' },
+  { name: 'Mercedes-Benz G-Wagon', image: '/images/2 Mercedes-Benz G-Wagon.jpeg' },
+  { name: 'Mercedes-Benz', image: '/images/3 Mercedes-Benz.jpeg' },
+  { name: 'BMW 7 Series', image: '/images/4 BMW 7 Series.jpg' },
+  { name: 'Audi A6', image: '/images/5 Audi A6.jpg' },
+  { name: 'Toyota Land Cruiser LC300', image: '/images/6 Toyota Land Cruiser LC300.jpg' },
+  { name: 'Toyota Land cruiser ZX V8', image: '/images/7 Toyota Land cruiser ZX V8.jpg' },
+  { name: 'Toyota Land cruiser Prado TX', image: '/images/8 Toyota Land cruiser Prado TX.jpg' },
+  { name: 'Toyota Fortuner', image: '/images/9 Toyota Fortuner.jpg' },
+  { name: 'Toyota Hilux Revo', image: '/images/10 Toyota Hilux Revo.jpg' },
+  { name: 'Honda Civic RS Turbo', image: '/images/11 Honda Civic RS Turbo.jpg' },
+  { name: 'Toyota Altis Grande', image: '/images/12 Toyota Altis Grande.jpg' },
+  { name: 'Haval', image: '/images/13 Haval.jpg' },
+  { name: 'Kia Sportage', image: '/images/14 Kia Sportage.jpg' },
 ];
 
-export const galleryImages = [
-  'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80',
-  'https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1400&q=80',
-  'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1400&q=80',
-  'https://images.unsplash.com/photo-1549921296-3a4a3e28b615?auto=format&fit=crop&w=1400&q=80',
-  'https://images.unsplash.com/photo-1563720228867-28f939c23bfd?auto=format&fit=crop&w=1400&q=80',
-];
+export const galleryImages = fleet.map((car) => car.image);

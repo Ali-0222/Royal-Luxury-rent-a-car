@@ -18,6 +18,7 @@ export function Hero({ slideIndex, showCallMenu, onToggleCallMenu, whatsappLink 
       <div className="hero-copy" data-animate>
         <h1>{slide.title}</h1>
         <p>{slide.text}</p>
+        <div className="hero-signature">Your Comfort Our Priority</div>
         <button className="hero-contact-toggle" onClick={onToggleCallMenu}>
           Contact Options
         </button>

@@ -2,12 +2,12 @@
 
 export function ModelsSection() {
   const models = [
-    ['Sedan', 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=460&q=80'],
-    ['Sports', 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=460&q=80'],
-    ['Jeep', 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=460&q=80'],
-    ['SUV', 'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=460&q=80'],
-    ['Luxury', 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=460&q=80'],
-    ['Luxury', 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=460&q=80'],
+    ['Sedan', '/images/12 Toyota Altis Grande.jpg'],
+    ['Executive', '/images/5 Audi A6.jpg'],
+    ['Jeep', '/images/10 Toyota Hilux Revo.jpg'],
+    ['SUV', '/images/14 Kia Sportage.jpg'],
+    ['Luxury', '/images/1 Rolls Royce.jpeg'],
+    ['Premium', '/images/3 Mercedes-Benz.jpeg'],
   ];
 
   return (

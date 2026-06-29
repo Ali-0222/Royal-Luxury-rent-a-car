@@ -214,6 +214,24 @@ a {
   text-transform: uppercase;
 }
 
+.hero-signature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  margin-top: 20px;
+  padding: 0 24px;
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: clamp(12px, 1.8vw, 15px);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
 .hero-contact-toggle {
   position: absolute;
   width: 1px;
@@ -337,7 +355,7 @@ a {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(1, 8, 26, 0.88), rgba(52, 90, 226, 0.76)),
-    url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1500&q=80') center/cover;
+    url('/images/6 Toyota Land Cruiser LC300.jpg') center/cover;
   color: #ffffff;
 }
 

@@ -13,7 +13,7 @@ export function GallerySection({ onOpen }: GallerySectionProps) {
       </div>
       <div className="footer-gallery-preview">
         <img
-          src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
+          src="/images/1 Rolls Royce.jpeg"
           alt="Gallery preview"
           onClick={onOpen}
         />
