@@ -903,6 +903,13 @@ a {
     grid-template-columns: 1fr;
   }
 
+  #fleet[data-animate],
+  #fleet [data-animate] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
   .fleet-card img {
     height: 260px;
   }
