@@ -28,12 +28,14 @@ export function AboutSection({ whatsappLink }: AboutSectionProps) {
         <h2>About Royal Luxury Rent a Car</h2>
         <h3>Drive with Confidence. Arrive in Style.</h3>
         <p>
-          Founded in 2008, Royal Luxury Rent a Car is redefining the car rental experience across Pakistan. Based in
-          Islamabad, we offer a premium fleet of well-maintained vehicles for business, leisure, and airport travel.
+          We don&apos;t just rent cars. We deliver trust, comfort, and convenience. Whether you&apos;re heading to a
+          business meeting, exploring the city, or planning a weekend escape, our vehicles and services are tailored to
+          match your lifestyle.
         </p>
         <p>
-          Whether you&apos;re heading to a business meeting, exploring the city, or planning a weekend escape, our vehicles
-          and support team make the road feel easy.
+          With flexible booking options, professional support, and a customer-first approach, Western Rent a Car has
+          quickly become a favorite among travelers and locals alike. Wherever the road takes you, we make sure you get
+          there with ease.
         </p>
         <a className="button button-primary" href={whatsappLink} target="_blank" rel="noreferrer">
           Discover More

@@ -5,8 +5,14 @@ import { GalleryModal } from '@/app/components/GalleryModal';
 import { CONTACT_EMAIL, WHATSAPP_LINK, PHONE_NUMBER } from '@/app/data/contact';
 import { fleet } from '@/app/data/fleet';
 
+const extraGalleryImages = [
+  { name: 'Royal Luxury vehicle 1', image: '/images/1 car.jpeg' },
+  { name: 'Royal Luxury vehicle 2', image: '/images/2 car.jpeg' },
+  { name: 'Royal Luxury vehicle 3', image: '/images/3 car.jpeg' },
+];
+
 export function Footer() {
-  const galleryCars = fleet.slice(0, 9);
+  const galleryCars = [...fleet, ...extraGalleryImages];
   const galleryImages = galleryCars.map((car) => car.image);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
   const isGalleryOpen = selectedImageIndex !== null;
@@ -55,7 +61,7 @@ export function Footer() {
               {galleryCars.map((car, index) => (
                 <button
                   key={car.name}
-                  className="footer-gallery-button"
+                  className="footer-gallery-button footer-gallery-image"
                   type="button"
                   onClick={() => setSelectedImageIndex(index)}
                   aria-label={`Open ${car.name} image`}
@@ -63,6 +69,14 @@ export function Footer() {
                   <img src={car.image} alt={car.name} />
                 </button>
               ))}
+              <button
+                className="footer-gallery-button footer-gallery-more"
+                type="button"
+                onClick={() => setSelectedImageIndex(8)}
+                aria-label="Show more gallery images"
+              >
+                Show More
+              </button>
             </div>
           </div>
           <div className="footer-column footer-newsletter">

@@ -17,19 +17,16 @@ import { WHATSAPP_LINK, PHONE_NUMBER } from '@/app/data/contact';
 const testimonials = [
   {
     name: 'Hammad.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80',
     quote:
       'The rental price was fair, and the car was well maintained. Pickup and drop-off were quick and easy. Highly recommended for anyone needing a reliable car rental service in Islamabad!',
   },
   {
     name: 'M Huzaifa',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80',
     quote:
       'I was impressed by the professionalism and efficiency of Royal Luxury Rent a Car. The driver was very helpful and friendly, and the vehicle was in top condition.',
   },
   {
     name: 'Furqan Khanzada',
-    image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=120&q=80',
     quote:
       'I booked a car with Royal Luxury Rent a Car for my trip to Islamabad. Everything went perfectly. The car was clean, maintained, and exactly what I needed.',
   },
@@ -90,7 +87,6 @@ export default function HomePage() {
               <p>{testimonial.quote}</p>
               <div className="stars">★★★★★</div>
               <div className="review-person">
-                <img src={testimonial.image} alt={`${testimonial.name} customer`} />
                 <div>
                   <strong>{testimonial.name}</strong>
                   <span>Customer</span>

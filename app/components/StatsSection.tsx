@@ -10,15 +10,15 @@ export function StatsSection() {
         </div>
         <div className="stats-card">
           <div>
-            <strong>18</strong>
+            <strong>40</strong>
             <span>Cars Inventory</span>
           </div>
           <div>
-            <strong>4</strong>
-            <span>Center Solutions</span>
+            <strong>230</strong>
+            <span>Canter Solution</span>
           </div>
           <div>
-            <strong>12</strong>
+            <strong>660</strong>
             <span>Happy Customers</span>
           </div>
         </div>
