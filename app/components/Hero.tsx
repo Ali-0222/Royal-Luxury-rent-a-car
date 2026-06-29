@@ -13,7 +13,7 @@ export function Hero({ slideIndex, showCallMenu, onToggleCallMenu, whatsappLink 
   const slide = heroSlides[slideIndex];
 
   return (
-    <section className="hero" style={{ backgroundImage: `url(${slide.image})` }}>
+    <section className="hero" style={{ backgroundImage: `url("${slide.image}")` }}>
       <div className="hero-overlay" />
       <div className="hero-copy" data-animate>
         <h1>{slide.title}</h1>

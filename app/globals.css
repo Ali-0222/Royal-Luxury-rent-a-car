@@ -174,11 +174,13 @@ a {
 
 .hero {
   position: relative;
-  min-height: 500px;
+  min-height: clamp(620px, 58vw, 780px);
   display: grid;
   place-items: center;
-  background-size: cover;
-  background-position: center 46%;
+  background-color: #050505;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero::before {
@@ -192,7 +194,7 @@ a {
   position: relative;
   z-index: 1;
   width: min(1040px, calc(100% - 36px));
-  padding-top: 24px;
+  padding-bottom: 320px;
   text-align: center;
   color: #ffffff;
 }
@@ -833,7 +835,7 @@ a {
   }
 
   .hero {
-    min-height: 420px;
+    min-height: 560px;
   }
 
   .fleet-grid,
@@ -883,11 +885,15 @@ a {
   }
 
   .hero {
-    min-height: 360px;
+    min-height: 500px;
   }
 
   .hero-copy h1 {
     margin-bottom: 14px;
+  }
+
+  .hero-copy {
+    padding-bottom: 230px;
   }
 
   .fleet-grid,
