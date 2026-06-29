@@ -1,8 +1,26 @@
 'use client';
 
+import { useState } from 'react';
+import { GalleryModal } from '@/app/components/GalleryModal';
 import { CONTACT_EMAIL, WHATSAPP_LINK, PHONE_NUMBER } from '@/app/data/contact';
+import { fleet } from '@/app/data/fleet';
 
 export function Footer() {
+  const galleryCars = fleet.slice(0, 9);
+  const galleryImages = galleryCars.map((car) => car.image);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const isGalleryOpen = selectedImageIndex !== null;
+
+  const showPreviousImage = () => {
+    setSelectedImageIndex((current) =>
+      current === null ? 0 : (current - 1 + galleryImages.length) % galleryImages.length
+    );
+  };
+
+  const showNextImage = () => {
+    setSelectedImageIndex((current) => (current === null ? 0 : (current + 1) % galleryImages.length));
+  };
+
   return (
     <>
       <div className="prefooter">
@@ -34,10 +52,17 @@ export function Footer() {
           <div className="footer-column footer-gallery">
             <h4>Gallery</h4>
             <div className="footer-gallery-grid">
-              <img src="/images/1 Rolls Royce.jpeg" alt="Rolls Royce" />
-              <img src="/images/2 Mercedes-Benz G-Wagon.jpeg" alt="Mercedes-Benz G-Wagon" />
-              <img src="/images/3 Mercedes-Benz.jpeg" alt="Mercedes-Benz" />
-              <img src="/images/4 BMW 7 Series.jpg" alt="BMW 7 Series" />
+              {galleryCars.map((car, index) => (
+                <button
+                  key={car.name}
+                  className="footer-gallery-button"
+                  type="button"
+                  onClick={() => setSelectedImageIndex(index)}
+                  aria-label={`Open ${car.name} image`}
+                >
+                  <img src={car.image} alt={car.name} />
+                </button>
+              ))}
             </div>
           </div>
           <div className="footer-column footer-newsletter">
@@ -49,9 +74,17 @@ export function Footer() {
           </div>
         </div>
         <div className="container footer-bottom">
-          <small>© {new Date().getFullYear()} Royal Luxury Rent a Car. All rights reserved.</small>
+          <small>&copy; {new Date().getFullYear()} Royal Luxury Rent a Car. All rights reserved.</small>
         </div>
       </footer>
+      <GalleryModal
+        isOpen={isGalleryOpen}
+        images={galleryImages}
+        currentIndex={selectedImageIndex ?? 0}
+        onClose={() => setSelectedImageIndex(null)}
+        onPrev={showPreviousImage}
+        onNext={showNextImage}
+      />
     </>
   );
 }

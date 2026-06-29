@@ -732,11 +732,26 @@ a {
   gap: 8px;
 }
 
-.footer-gallery-grid img {
+.footer-gallery-button {
+  width: 62px;
+  height: 48px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.footer-gallery-button img {
   width: 62px;
   height: 48px;
   object-fit: cover;
-  border-radius: 4px;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.footer-gallery-button:hover img {
+  opacity: 0.82;
+  transform: scale(1.05);
 }
 
 .footer-newsletter input {
@@ -761,6 +776,66 @@ a {
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.5);
+}
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.gallery-frame {
+  width: min(980px, 100%);
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) 54px;
+  align-items: center;
+  gap: 18px;
+}
+
+.gallery-frame img {
+  width: 100%;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #111111;
+}
+
+.modal-close,
+.gallery-nav {
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.gallery-nav {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 42px;
+  line-height: 1;
+}
+
+.modal-close:hover,
+.gallery-nav:hover {
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .floating-contact {
@@ -930,5 +1005,25 @@ a {
   .floating-action {
     width: 52px;
     height: 52px;
+  }
+
+  .gallery-modal {
+    padding: 52px 14px 24px;
+  }
+
+  .gallery-frame {
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+    gap: 8px;
+  }
+
+  .gallery-nav {
+    width: 42px;
+    height: 42px;
+    font-size: 34px;
+  }
+
+  .modal-close {
+    top: 12px;
+    right: 12px;
   }
 }
