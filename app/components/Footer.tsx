@@ -41,6 +41,7 @@ export function Footer() {
             <h4>Contact</h4>
             <p>{CONTACT_EMAIL}</p>
             <p>Phone / WhatsApp: {PHONE_NUMBER}</p>
+            <p>Phone / WhatsApp: {PHONE_NUMBER}</p>
             <p>Office 404, 4th floor, Gulistan Khan House, AKM Fazl-ul-Haq Rd, Block E, G 6/2 Blue Area, Islamabad, 44000</p>
           </div>
           <div className="footer-column footer-links">
