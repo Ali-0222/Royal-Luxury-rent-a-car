@@ -12,7 +12,7 @@ export function TopBar() {
 
       <div className="topbar-main">
         <div className="topbar-left">
-          <img src="/images/logo.jpeg" alt="Royal Luxury Rent a Car logo" className="topbar-logo" />
+          <img src="/images/logo.PNG" alt="Royal Luxury Rent a Car logo" className="topbar-logo" />
         </div>
 
         <nav className="topbar-nav" aria-label="Main navigation">

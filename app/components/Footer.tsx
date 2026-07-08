@@ -31,7 +31,7 @@ export function Footer() {
     <>
       <div className="prefooter">
         <div className="container prefooter-inner">
-          <img src="/images/logo.jpeg" alt="Royal Luxury Rent a Car logo" />
+          <img src="/images/logo.PNG" alt="Royal Luxury Rent a Car logo" />
           <strong>Save big with our cheap car rental</strong>
         </div>
       </div>
