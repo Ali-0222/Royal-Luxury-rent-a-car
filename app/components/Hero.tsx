@@ -24,8 +24,8 @@ export function Hero({ slideIndex, showCallMenu, onToggleCallMenu, whatsappLink 
         </button>
         {showCallMenu && (
           <div className="call-menu" data-animate>
-            <a href="tel:+923001234567" className="call-menu-item">
-              Call +92 300 1234567
+            <a href="tel:03342428554" className="call-menu-item">
+              Call 03342428554
             </a>
             <a href={whatsappLink} target="_blank" rel="noreferrer" className="call-menu-item">
               WhatsApp Message
