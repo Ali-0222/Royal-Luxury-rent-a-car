@@ -1,6 +1,7 @@
 'use client';
 
 import { heroSlides } from '@/app/data/hero';
+import { PHONE_NUMBER } from '@/app/data/contact';
 
 interface HeroProps {
   slideIndex: number;
@@ -24,8 +25,8 @@ export function Hero({ slideIndex, showCallMenu, onToggleCallMenu, whatsappLink 
         </button>
         {showCallMenu && (
           <div className="call-menu" data-animate>
-            <a href="tel:03342428554" className="call-menu-item">
-              Call 03342428554
+            <a href={`tel:${PHONE_NUMBER}`} className="call-menu-item">
+              Call {PHONE_NUMBER}
             </a>
             <a href={whatsappLink} target="_blank" rel="noreferrer" className="call-menu-item">
               WhatsApp Message
