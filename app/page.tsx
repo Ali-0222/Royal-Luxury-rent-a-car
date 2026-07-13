@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { TopBar } from '@/app/components/TopBar';
 import { Hero } from '@/app/components/Hero';
+import { HomeVideo } from '@/app/components/HomeVideo';
 import { FleetSection } from '@/app/components/FleetSection';
 import { FleetCard } from '@/app/components/FleetCard';
 import { StatsSection } from '@/app/components/StatsSection';
@@ -56,6 +57,8 @@ export default function HomePage() {
         onToggleCallMenu={() => setShowCallMenu((prev) => !prev)}
         whatsappLink={WHATSAPP_LINK}
       />
+
+      <HomeVideo />
 
       <FleetSection
         fleetCards={fleet.map((car) => (
