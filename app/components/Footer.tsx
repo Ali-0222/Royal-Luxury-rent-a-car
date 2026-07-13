@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { GalleryModal } from '@/app/components/GalleryModal';
-import { CONTACT_EMAIL, WHATSAPP_LINK, PHONE_NUMBER, PHONE_NUMBERS } from '@/app/data/contact';
+import { CONTACT_EMAIL, OFFICE_ADDRESS, WHATSAPP_LINK, PHONE_NUMBER, PHONE_NUMBERS } from '@/app/data/contact';
 import { fleet } from '@/app/data/fleet';
 
 const extraGalleryImages = [
@@ -42,7 +42,7 @@ export function Footer() {
             <p>{CONTACT_EMAIL}</p>
             <p>Phone / WhatsApp: {PHONE_NUMBER}</p>
             <p>Phone / WhatsApp: {PHONE_NUMBERS}</p>
-            <p>Office 404, 4th floor, Gulistan Khan House, AKM Fazl-ul-Haq Rd, Block E, G 6/2 Blue Area, Islamabad, 44000</p>
+            <p>{OFFICE_ADDRESS}</p>
           </div>
           <div className="footer-column footer-links">
             <h4>Quick Links</h4>
