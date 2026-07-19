@@ -58,7 +58,7 @@ export default function HomePage() {
         whatsappLink={WHATSAPP_LINK}
       />
 
-      <HomeVideo />
+      {/* <HomeVideo /> */}
 
       <FleetSection
         fleetCards={fleet.map((car) => (
